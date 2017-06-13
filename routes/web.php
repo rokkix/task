@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+Route::post('/get/tags','TagController@index')->name('tag');
+Route::post('/post/tags','TagController@index')->name('tag');
+Route::post('/post/tags','TagController@index')->name('tag');
+
+Route::get('/auth','TrainingController@index')->name('training');
+
+
+
